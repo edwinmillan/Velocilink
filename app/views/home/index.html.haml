@@ -6,8 +6,9 @@
   .row-fluid
     .offset1.span5.home-content.lines
       This is where I will woo you with all the cool things that Velocilink will do.
-      Velocilink will work using a bookmarklet that scans the page for the main 
-      images and send the URL to this site. Then you will
+      Velocilink will work using a #{ link_to "Bookmarklet", "http://en.wikipedia.org/wiki/Bookmarklet"} that scans the page for the main 
+      images and send the URL to this site. Then you will have the option to download
+      them all.
       .line.x1
       .line.x2
      
@@ -18,8 +19,12 @@
 
       %u Upcoming Sites
       %ul
-        %li Imgur
-        %li Reddit
+        %li 
+          = image_tag("http://www.imgur.com/favicon.ico")
+          = link_to "Imgur", "http://www.imgur.com"
+        %li 
+          = image_tag("http://www.reddit.com/favicon.ico")
+          = link_to "Reddit", "http://www.reddit.com"
       .line.x4
       .line.x5
     .span4
