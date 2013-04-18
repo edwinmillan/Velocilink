@@ -1,0 +1,19 @@
+.container-fluid
+  .row-fluid
+    %center
+      %h2 
+        %u Portal
+  .row-fluid
+    .hero-unit.hero-mod.span6
+      %ul 
+        %u Links for the day
+        %li http://i.imgur.com/CBBqXpm.jpg
+        %li http://i.imgur.com/ePtenu9.jpg
+        %li http://i.imgur.com/ymizy6N.gif
+    .hero-unit.hero-mod.span6
+      %ul
+        %u Archived Links
+        %li= link_to Date.yesterday, "#"
+        %li= link_to Date.yesterday.yesterday, "#"
+        %li= link_to Date.yesterday.yesterday.yesterday, "#"
+  = render partial: 'footer'

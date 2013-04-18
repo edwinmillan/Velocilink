@@ -1,0 +1,16 @@
+.row-fluid
+  .hero-unit.hero-mod.offset1.span4
+    %u Download Options
+    %br/
+    %button.btn Download
+    selected images.
+    %br/
+    %br/
+    %button.btn Download
+    today's images.
+  .hero-unit.hero-mod.offset2.span4
+    %u Generate Bookmarklet
+    %br/
+    %button.btn Generate
+    .genbookmarklet
+      = link_to "Bookmarklet", 'javascript:(function(){alert("Test!")})();'

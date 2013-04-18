@@ -11,7 +11,11 @@
         %li= link_to 'Sign In', new_user_session_path
     %ul.nav.pull-right
       %li 
-        = link_to 'Home', root_path, class: 'brand'
+        = link_to 'Home', root_path
+      - if user_signed_in?
+        %li.divider-vertical
+        %li
+          = link_to "Portal", portal_index_path
 
 - if flash[:alert].present?
   %center.alert= flash[:alert]

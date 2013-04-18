@@ -1,4 +1,6 @@
 Velocilink::Application.routes.draw do
+  get "portal/index"
+
   get "home/index"
 
   get "imgur/index"
